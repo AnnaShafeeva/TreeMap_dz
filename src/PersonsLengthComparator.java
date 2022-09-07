@@ -7,7 +7,7 @@ public class PersonsLengthComparator implements Comparator<Person> {
     private int quantity;
 
 
-    public PersonsLengthComparator(int quantity){
+    public PersonsLengthComparator(int quantity) {
         this.quantity = quantity;
     }
 
@@ -21,8 +21,8 @@ public class PersonsLengthComparator implements Comparator<Person> {
         int resultCompareNotZero = (resultCompare == 1) ? -1 : 1;
 
         if (resultCompare == 0 || (partsSurname1.length >= quantity &&
-                partsSurname2.length >= quantity )){
-            if (o1.getAge() > o2.getAge()){
+                partsSurname2.length >= quantity)) {
+            if (o1.getAge() > o2.getAge()) {
                 return -1;
             } else {
                 return 1;
